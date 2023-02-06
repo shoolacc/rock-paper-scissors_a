@@ -3,7 +3,7 @@ radio.onReceivedNumber(function (receivedNumber) {
         basic.showString("Draw!")
     } else {
         if (receivedNumber < player1_choice) {
-            if (receivedNumber == 2 && player1_choice == 0) {
+            if (receivedNumber == 0 && player1_choice == 2) {
                 basic.showString("Win!")
                 game.setScore(1)
                 basic.showString("" + (game.score()))
@@ -13,7 +13,7 @@ radio.onReceivedNumber(function (receivedNumber) {
                 basic.showString("" + (game.score()))
             }
         } else {
-            if (player1_choice == 2 && receivedNumber == 0) {
+            if (player1_choice == 0 && receivedNumber == 2) {
                 basic.showString("Lose")
             } else {
                 basic.showString("Lose")
