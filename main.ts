@@ -8,7 +8,7 @@ radio.onReceivedNumber(function (receivedNumber) {
                 game.setScore(1)
                 basic.showString("" + (game.score()))
             } else {
-                basic.showString("Win!")
+                basic.showString(" Win!")
                 game.setScore(1)
                 basic.showString("" + (game.score()))
             }
